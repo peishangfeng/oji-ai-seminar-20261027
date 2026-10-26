@@ -7,6 +7,58 @@
 .download-list{width:100%}.download-row{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:22px 0;border-bottom:1px solid #173e3733}.download-row h3{font-size:clamp(30px,3.2vw,46px);margin:0 0 5px}.download-row span{font-size:clamp(18px,1.7vw,25px);color:#54685c}.store-links{display:flex;gap:20px}.store-links a{display:block;font-size:clamp(24px,2.4vw,34px);font-weight:700;padding:16px 28px;background:#174e46;color:#fff;border-radius:6px;text-decoration:none;text-align:center;min-height:60px}.store-links a:hover,.store-links a:focus-visible{background:#286b5f;outline:3px solid #d85b37;outline-offset:3px}@media(max-width:650px){.download-row{display:block;padding:20px 0}.store-links{gap:12px;margin-top:14px}.store-links a{font-size:22px;padding:15px 12px;flex:1}#s9 .note{font-size:22px}}
 .contents-list{margin:0;padding-left:1.5em;font-size:clamp(26px,3vw,42px);line-height:1.65}.contents-list li{padding-left:.25em}.contents-list li::marker{color:#d85b37;font-weight:700}@media(max-width:650px){.contents-list{font-size:26px;line-height:1.8}#contents h2{margin-bottom:22px}}
 .qa-share{text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}.qa-picture{width:170px;height:110px;object-fit:cover;border-radius:6px}.qr-link{display:block;background:white;line-height:0}.qr-link img{width:clamp(230px,23vw,340px);height:auto;display:block}.qr-caption{font-size:clamp(22px,2vw,28px);line-height:1.5;margin:0;font-weight:700}.qr-caption span{font-size:clamp(18px,1.5vw,22px);font-weight:400}@media(max-width:650px){#s8 .qa-share{margin-top:18px}.qr-link img{width:260px}.qa-picture{width:150px;height:90px}}
+
+/* Compact mobile slides, including Safari's visible browser controls. */
+@media screen and (max-width:650px){
+ html,body{height:100%;overflow:hidden}
+ header{height:48px;padding:5px 16px;font-size:12px}
+ header button{font-size:12px;padding:5px 9px;min-height:36px}
+ footer{height:58px;padding:5px 12px;gap:6px}
+ footer button{font-size:14px;padding:8px 10px;min-height:42px}
+ footer details{font-size:12px}#counter{font-size:14px;min-width:42px}
+ main{height:100svh;scroll-snap-type:y mandatory}
+ section{height:100svh;min-height:100svh;padding:60px 20px 70px;overflow:visible;justify-content:center}
+ .eyebrow{font-size:13px;line-height:1.4;margin:0 0 10px;letter-spacing:.04em}
+ h1,.cover h1,#s8 h1{font-size:30px;line-height:1.3}
+ h2{font-size:27px;line-height:1.3;margin:0 0 12px}
+ p{font-size:18px;line-height:1.5;margin:8px 0}
+ .note,#s9 .note{font-size:15px;line-height:1.45;margin-top:10px}
+ .small{font-size:13px;line-height:1.5;margin:9px 0 0}
+ .quote{border-left-width:4px;padding-left:12px}
+ .layout{grid-template-columns:1fr;gap:12px}
+ .photo,.cover .photo{height:clamp(100px,22svh,165px);max-height:165px;aspect-ratio:auto;grid-row:1}
+ .photo img{object-fit:contain}
+ .cover .layout>div>p{font-size:18px;line-height:1.5}
+ .cover .date{font-size:16px;line-height:1.6;margin-top:18px}
+ .contents-list{font-size:21px;line-height:1.85}
+ #contents h2{margin-bottom:14px}
+ #s7 .layout{grid-template-columns:1.1fr 1fr;gap:12px}
+ #s7 h2{font-size:24px}#s7 p{font-size:16px}#s7 .note{font-size:14px}#s7 .small{font-size:13px}
+ #s7 .app-screen{grid-row:auto;height: min(57svh,410px);max-height:410px}
+ #s8 .layout{gap:10px}#s8 .qa-share{margin-top:0;gap:6px}
+ .qa-picture{width:100px;height:64px}
+ .qr-link img{width:clamp(145px,25svh,190px)}
+ .qr-caption{font-size:16px;line-height:1.4;margin:0}.qr-caption span{font-size:13px}
+ #s8 p{font-size:17px}#s8 .note{font-size:14px}
+ .download-row{padding:12px 0}.download-row h3{font-size:24px;margin:0 0 2px}
+ .download-row span{font-size:13px}.store-links{gap:10px;margin-top:8px}
+ .store-links a{font-size:17px;padding:10px 12px;min-height:44px}
+ details[open]{bottom:65px;padding:18px;max-height:65svh}
+}
+@media screen and (max-width:650px) and (max-height:700px){
+ section{padding-top:56px;padding-bottom:64px}
+ h2{font-size:24px}.eyebrow{margin-bottom:7px}
+ .photo,.cover .photo{height:clamp(85px,18svh,125px)}
+ p{font-size:16px;margin:6px 0}.note{font-size:14px;margin-top:7px}
+ .small{font-size:12px}h1,.cover h1,#s8 h1{font-size:27px}
+ .layout{gap:9px}.cover .date{margin-top:12px;font-size:14px}
+ .contents-list{font-size:19px;line-height:1.75}
+ .qa-picture{height:48px;width:80px}.qr-link img{width:145px}
+ #s8 p{font-size:15px}.qr-caption span{font-size:12px}
+ .download-row{padding:9px 0}.download-row h3{font-size:22px}
+ #s9 .note{font-size:14px}
+}
+
 </style><header><span>十条　AIと健康のセミナー</span><button id="full">全画面にする</button></header><main id="deck">
 <section class="cover" id="s1"><div class="eyebrow">王子法人会 第8地区　健康セミナー</div><div class="layout"><div><h1>AIを、毎日の<br><em>健康づくり</em>に。</h1><p>話しかける。見せる。相談する。</p></div><figure class="photo"><img src="assets/cover-illustration.png" alt="スマートフォンを一緒に使う30〜40代の夫婦" width="1448" height="1086"></figure></div><p class="date">2026年10月27日（火）19:00〜20:30<br>講師　ENTOKYO株式会社　裴 尚峰</p></section>
 <section id="contents"><div class="eyebrow">今日のお話</div><h2>目次</h2><ol class="contents-list"><li>AIの進化</li><li>食事のカロリー</li><li>カメラを使った健康相談</li><li>スケジュール管理</li><li>北区の健康アプリ「あるきた」</li><li>質問の時間</li><li>参考リンク</li></ol></section><section id="s2"><div class="eyebrow">01　AIの進化　①</div><h2>AIと、ふつうの言葉で話せます</h2><div class="layout"><div><p>文字で聞く。声で話す。<br>写真を見せることも。</p><p class="quote">「むずかしい言葉は使わず、<br>ゆっくり説明して」</p><p class="note">何度でも聞き直せます。</p></div><figure class="photo"><img src="assets/talk-illustration.png" alt="スマートフォンに話しかける30〜40代の女性" width="1448" height="1086"></figure></div></section>
